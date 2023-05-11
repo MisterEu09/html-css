@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Tags</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #000000;
+        }
+        h2{
+            color: #3E3740;
+        }
+        header{
+            background-color: #6D6270;
+            padding: 25px;
+            margin: 12px;
+        }
+        nav{
+            background-color: #AB6CBD;
+            padding: 10px;            
+            box-shadow: 1px 1px black;
+        }
+        nav > a{
+            text-decoration: wavy;
+            color: #664070;
+            font-weight: bold;
+            margin: 10px;
+        }
+        nav > a:hover{
+            text-decoration: line-through;
+        }
+        main{
+            background-color: #EBD3F2;
+            padding: 22px;
+            margin: 12px;
+            border-radius: 10px 20px 30px 40px;
+            box-shadow: 5px 7px #bc09ed;
+        }
+        article{
+            background-color: #D2BDD9;
+            padding: 10px;
+        }
+        article>aside{
+            color: #503359;
+            background-color: #A190A6;
+        }
+        footer{
+            color: #503359;
+            background-color: #A190A6;
+            padding: 2px;
+            margin: 0px;
+            text-align: center;
+        }
+        footer> p {
+            margin: 0px;
+        }
+        div#bola{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #3E3740;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id = "assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>
+                   Noticias sobre Dom Pedro 
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis asperiores voluptas assumenda. Minima, reiciendis! Aliquam, accusantium in! Dolores deserunt id iusto sapiente quam earum quasi. Facere nihil obcaecati recusandae quia.</p>
+                <aside>
+                    Artigo escrito por Dom Pedro II
+                </aside>
+            </article>
+            <article>
+                <h2>
+                    Noticias sobre Dona Maria 
+                 </h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis asperiores voluptas assumenda. Minima, reiciendis! Aliquam, accusantium in! Dolores deserunt id iusto sapiente quam earum quasi. Facere nihil obcaecati recusandae quia.</p>
+            </article>
+            <footer>
+                <p> Escrito por Rosalina</p>
+            </footer>
+            <div id="bola"></div>
+        </section>
+    </main>
+</body>
+</html>
