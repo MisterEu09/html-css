@@ -7,11 +7,16 @@
 @font-face {
     font-family: The Flash;
     src: url('../fontes/Elements.ttf');
-
 }
-@media (min-width: 961px)
-{
-    
+@font-face {
+    font-family: Roboto;
+    src: url('../fontes/GoogleFonts-Roboto-Regular.ttf');
+  
+}
+@font-face {
+    font-family: Open Sans;
+    src: url('../fontes/GoogleFonts-OpenSans-Regular.ttf');
+  
 }
     :root{
         --cor1:#202020;
@@ -24,7 +29,8 @@
 
         --fonteMarvel:'Marvel';
         --fonteDC:"The Flash", "TK3iWkUHHAIjg752FD8Ghe4";
-        --fontePadrao:Arial, Roboto, sans-serif;
+        --fonteRoboto:'Roboto';
+        --fontePadrao:'Open_Sans';
     }
 *{
     margin:0px;
@@ -32,7 +38,7 @@
 }
 body{
     background-color: #FFF;
-    font-family: var(--fontePadrao);
+    font-family: "";
 }
 
 a.externo::after{
@@ -43,6 +49,7 @@ header{
      text-align: center;
      padding-top: 0px;
      max-height: auto;
+     max-width: auto;
 
 }
 header >h1{
@@ -94,7 +101,9 @@ main p {
     padding: 5px;
     text-align: justify;
     line-height: normal;
-    font-family: var(--fontePadrao);
+    font-family:'Roboto';
+    color: var(--cor1);
+
 }
 main p.noticias{
     color: var(--cor6);
@@ -105,14 +114,23 @@ main p.data{
     font-size: 15px;
     padding: 0px 20px 0px 20px;
     color: #d0d0d0;
+
+    
 }
 main p.autor{
-    font-size: 15px;
+    font-size:14px;
     padding: 18px ;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
-
+    font-family: var(--fonteRoboto);
+    outline-style: dashed;
+    outline-color: #20202086;
+}
+div#autor{
+    margin: 10px;
+    border-bottom: 3px solid var(--cor0);
+    border-top: 3px solid var(--cor0);
 }
 main h1.titulo{
     color: var(--cor2);
@@ -120,23 +138,27 @@ main h1.titulo{
     padding: 20px;
     margin-bottom: -15px;
     font-size: 25px;
+
 }
 main h1.subtitulo{
     color: #171717b2;
     font-family: var(--fontePadrao);
     padding: 20px;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 21px;    
+    border: 2px solid var(--cor0);
 }
 
 main h2{
     color:var(--cor7);
     font-family: var(--fonteDC);
-    padding: 12px;
+    margin: 12px;
+    padding: 9px;
     font-weight: mormal;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
+    outline-style: double ;
+    outline-color: #20202069;
 }
-main img{
+main img.imagem{
     display: block;
     margin: auto;
     padding: 9px;
@@ -158,19 +180,70 @@ footer a :hover{
     text-decoration: underline;
 }
 div.Duas_Colunas{
-    display: block;
+    display: inline-flex;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    /*columns: 2;*/
 }
 div.Coluna_Principal{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
+    max-width: 80%;    
+    padding-block-end: -30px;
+    padding-right: 30px;
 }
-div.Coluna_dois{
-    flex-basis: 300px;
-    min-width: 300px;
-    min-height: 300px;
+div.Coluna_Dois{
+    flex-basis: auto;
+    max-width: 350px;
+    max-height: 350px; 
+    color: var(--cor1);
 }
+div.Coluna_Dois>h1{
+    font-size: 26px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: var(--fonteDC);
+    background-image: linear-gradient(to right, #0376f283,#aa030397);
+
+}
+div.Coluna_Dois>p{
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+div.Coluna_Card{
+    columns: 2;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: 2.5px solid rgba(25, 23, 23, 0.587); 
+
+}
+div p.tipo_de_card{
+    text-align: left;
+    font-size: 14px;
+    font-family: var(--fonteRoboto);
+    font-weight: lighter;
+    color: #0376f2;
+}
+div.Coluna_Card>p{
+    text-align: left;
+    font-size: 14px;
+    font-family: var(--fonteRoboto);
+    font-weight: bold;
+}
+img.imagem_card{
+    margin: 0px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+}
+
+
