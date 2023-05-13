@@ -235,7 +235,7 @@ div p.tipo_de_card{
 div.Coluna_Card>p{
     text-align: left;
     font-size: 14px;
-    font-family: 'Roboto';
+    font-family: var(--fonteRoboto);
     font-weight: 16.8px;
     font-weight: bold;
 }
