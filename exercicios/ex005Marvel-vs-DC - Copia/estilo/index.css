@@ -163,7 +163,7 @@ main img.imagem{
     margin: auto;
     padding: 9px;
     padding-bottom: 15px;
-    min-width: 400px;
+    max-width: 650px; 
 }
 
 footer{
@@ -189,13 +189,14 @@ div.Coluna_Principal{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    max-width: 80%;    
+    max-width: 650px;    
     padding-block-end: -30px;
     padding-right: 30px;
 }
 div.Coluna_Dois{
+    padding-left: 20px;
     flex-basis: auto;
-    max-width: 350px;
+    max-width: 300px;
     max-height: 350px; 
     color: var(--cor1);
 }
@@ -234,7 +235,8 @@ div p.tipo_de_card{
 div.Coluna_Card>p{
     text-align: left;
     font-size: 14px;
-    font-family: var(--fonteRoboto);
+    font-family: 'Roboto';
+    font-weight: 16.8px;
     font-weight: bold;
 }
 img.imagem_card{
