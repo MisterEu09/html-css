@@ -196,7 +196,7 @@ div.Coluna_Principal{
 div.Coluna_Dois{
     padding-left: 20px;
     flex-basis: auto;
-    max-width: 300px;
+    max-width: 325px;
     max-height: 350px; 
     color: var(--cor1);
 }
@@ -224,19 +224,19 @@ div.Coluna_Card{
     padding-bottom: 10px;
     border-top: 2.5px solid rgba(25, 23, 23, 0.587); 
 
+
 }
 div p.tipo_de_card{
     text-align: left;
     font-size: 14px;
     font-family: var(--fonteRoboto);
     font-weight: lighter;
-    color: #0376f2;
+    color: #2020209e;
 }
 div.Coluna_Card>p{
-    text-align: left;
+    text-align: start;
     font-size: 14px;
     font-family: var(--fonteRoboto);
-    font-weight: 16.8px;
     font-weight: bold;
 }
 img.imagem_card{
