@@ -65,7 +65,7 @@ header>p{
     padding: 5px;
 }
 header img{
-    max-width: 150px;
+    max-height: 90px;
     display: block;
     margin: auto;
 }
@@ -165,7 +165,12 @@ main img.imagem{
     padding-bottom: 15px;
     max-width: 650px; 
 }
-
+main q{
+    color: var(--cor2);
+    display: block;
+    padding: 18px;
+    margin-left: 30px;
+    font-size: 25px;}
 footer{
     background-color: var(--cor1);
     color: #FFF;
@@ -247,5 +252,14 @@ img.imagem_card{
     display: block;
     margin: 0px;
 }
-
+ul{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: normal;
+    font-family:'Roboto';
+    color: var(--cor1);
+}
 
