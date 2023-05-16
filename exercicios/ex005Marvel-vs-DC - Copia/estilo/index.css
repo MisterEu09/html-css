@@ -265,3 +265,19 @@ ul{
  div.topo{
    background-image: url(imagem/Wallpaper.jpg);
  }
+
+main#News{
+    padding-top: 0px;
+}
+div.topo>p{
+    display: block; 
+    height: 100%;
+    width: 100vh;
+    font-family: var(--fonteMarvel);
+    font-size: 30px;
+    color: aliceblue;
+    /*width: 400px;*/
+    padding: 10px;
+    margin: auto auto;
+    position: center;
+}
