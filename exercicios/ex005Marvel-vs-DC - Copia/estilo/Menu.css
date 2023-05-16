@@ -39,6 +39,7 @@
 body{
     background-color: #FFF;
     font-family: "";
+    width: auto;
 }
 
 a.externo::after{
