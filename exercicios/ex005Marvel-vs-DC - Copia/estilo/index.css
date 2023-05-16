@@ -198,13 +198,7 @@ div.Coluna_Principal{
     padding-block-end: -30px;
     padding-right: 30px;
 }
-div.Coluna_Dois{
-    padding-left: 20px;
-    flex-basis: auto;
-    max-width: 325px;
-    max-height: 350px; 
-    color: var(--cor1);
-}
+
 div.Coluna_Dois>h1{
     font-size: 26px;
     text-align: center;
@@ -271,13 +265,16 @@ main#News{
 }
 div.topo>p{
     display: block; 
-    height: 100%;
-    width: 100vh;
+    height: 97vh;
+    width: 97vh;
     font-family: var(--fonteMarvel);
     font-size: 30px;
     color: aliceblue;
-    /*width: 400px;*/
-    padding: 10px;
-    margin: auto auto;
     position: center;
+    border: 1px solid violet;
+    padding: 0px;
+    /*padding-top: 25%;*/
+    margin: auto auto ;
+    border: 1px solid violet;
+    border-radius: 15px;
 }
