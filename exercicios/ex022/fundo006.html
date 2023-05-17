@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: aqua;
             background-image: url(imagens/wallpaper006.jpg);
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: auto;/*contain mostra a imagem inteira - ñ é tão bom*/ /*o auto ocuba 100%*//*cover é bom tbm*//*100% 100% as vezes serve*/
+            background-size: cover;/*contain mostra a imagem inteira - ñ é tão bom*/ /*o auto ocuba 100%*//*cover é bom tbm*//*100% 100% as vezes serve*/
+            /*background-attachment: fixed;/*pode ser scroll tbm*/
+
+            /*ShortHand - background
+            color>image>position>repeat>[size]>attachment*/
+
+            background: blue url(imagens/wallpaper006.jpg) center top no-repeat fixed;
+            background-size: cover;
         }
         div{
             background-color: aliceblue;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid violet;
             border-radius: 15px;
         }
         p#T2{
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: 10px auto;
             border: 1px solid violet;
