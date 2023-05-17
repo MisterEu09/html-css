@@ -1,0 +1,74 @@
+@charset "UTF-8";
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height:99vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+}
+header>h1{
+     font-variant: small-caps;/*text-transform: uppercase;=>upercase deixa maiuscula=> o Small Caps deixa a 1º Maior */
+     padding-top: 50px;
+}
+header>p{
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.8em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+
+}
+section.imagem>p{
+    display: block;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.499);
+}
+section.imagem{
+    background-color: black;
+    color: white;
+    background-attachment: fixed;
+}
+section#img1{
+    background-image: url(imagem/background001.jpg);
+    background-size: cover;
+    background-position: right center;
+}
+section#img2{
+    background-image: url(imagem/background002.jpg);
+    background-size: cover;
+    background-position: right center;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
