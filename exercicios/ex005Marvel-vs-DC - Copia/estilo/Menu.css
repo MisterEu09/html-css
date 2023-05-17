@@ -86,27 +86,23 @@ nav>a:hover{
     font-weight: bold;
     color: var(--cor6);
 }
-div.topo{
-    background-image: url(imagem/Wallpaper.jpg);
-    size: auto;
-  }
  
  main#News{
      padding-top: 0px;
  }
  div.topo>p{
      display: block; 
-     height: auto;
-     width: 97vh;
+     /*height: auto;
+     width: 97vh;*/
      font-family: var(--fonteMarvel);
-     font-size: 30px;
+     font-size: 50px;
      color: aliceblue;
-     position: auto auto;
-     padding: 0px;
-     padding-top: 25%;
-     margin: auto 0px ;
-     margin-bottom: 10px;
+     position: absolute;
+     padding: 10px;
+     left: 50%;
+     top: 50%;
      border-radius: 15px;
+     transform: translate(-50%, -50%);
 
  }
  div#Movie{
