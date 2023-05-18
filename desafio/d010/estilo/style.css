@@ -112,8 +112,9 @@ main h2{
     background-image: linear-gradient(to right, var(--cor6), var(--cor2));
 }
 
-main img.imagem{
+main img{
     width: 100%;
+    background-color: #088F07;
 }
 main img.pequena{
     max-width: 350px;

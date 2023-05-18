@@ -35,10 +35,13 @@
 *{
     margin:0px;
     padding:0px;
+    
 }
 body{
     background-color: #FFF;
-    font-family: "";
+    font-family: "--fonteRoboto";
+    font-size: 21px;
+    line-height: 2em;  
 }
 
 a.externo::after{
@@ -70,6 +73,7 @@ header img{
     margin: auto;
 }
 nav{
+    font-size: 18px;
     background-color: #151515;
     box-shadow: 0px 7px 9px #202020a0;
     padding: 5px;
@@ -103,22 +107,23 @@ main p {
     line-height: normal;
     font-family:'Roboto';
     color: var(--cor1);
+    
 
 }
 main p.noticias{
     color: var(--cor6);
-    font-size: 15px;
+    font-size: 18px;
     padding: 18px 20px 12px 20px;
 }
 main p.data{
-    font-size: 15px;
+    font-size: 18px;
     padding: 0px 20px 0px 20px;
     color: #d0d0d0;
 
     
 }
 main p.autor{
-    font-size:14px;
+    font-size:16px;
     padding: 18px ;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -152,9 +157,10 @@ main h1.subtitulo{
 main h2{
     color:var(--cor7);
     font-family: var(--fonteDC);
-    margin: 12px;
+    margin: 12px 30px 30px 30px;
     padding: 9px;
-    font-weight: mormal;
+    font-size: 24px;
+    font-weight: normal;
     outline-style: double ;
     outline-color: #20202069;
 }
@@ -191,14 +197,21 @@ div.Duas_Colunas{
     flex-basis: 0%;
 }
 div.Coluna_Principal{
+    width:auto ;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
     max-width: 650px;    
     padding-block-end: -30px;
-    padding-right: 30px;
-}
 
+}
+div.Coluna_Dois{
+        width: 25%;
+        margin-left: 19vh;
+}
+main img.imagem{
+    width: 100%;
+}
 div.Coluna_Dois>h1{
     font-size: 26px;
     text-align: center;
@@ -211,22 +224,21 @@ div.Coluna_Dois>h1{
 div.Coluna_Dois>p{
     text-align: center;
     font-size: 14px;
-    padding: 15px;
+    padding: 0px;
     padding-bottom: 20px;
 }
 
 div.Coluna_Card{
+    font-size: 14px;
     columns: 2;
     display: inline-block;
-    padding: 10px;
     padding-top: 20px;
     padding-bottom: 10px;
     border-top: 2.5px solid rgba(25, 23, 23, 0.587); 
 
-
 }
 div p.tipo_de_card{
-    text-align: left;
+    line-height: 1em;
     font-size: 14px;
     font-family: var(--fonteRoboto);
     font-weight: lighter;
@@ -246,11 +258,24 @@ img.imagem_card{
     display: block;
     margin: 0px;
 }
+div.titulo_do_Card{
+    line-height: 1.2px;
+    font-weight: 400px;
+    font-size: 14px;
+}
+p.subtitulo{
+    font-family: var(--fonteRoboto);
+    margin: 10px;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: linear-gradient(to right, #b1111192, #0552ab8a);
+}
 ul{
-    padding-left: 30px;
+    padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 17px;
+    font-size: 21px;
     text-align: justify;
     line-height: normal;
     font-family:'Roboto';

@@ -35,12 +35,14 @@
 *{
     margin:0px;
     padding:0px;
+    
 }
 html, body{
     height:99vh;
     background-color: #FFF;
     font-family: var(--fontePadrao);
-    width: auto;    
+    width: auto;  
+
 }
 a.externo::after{
     content:'\00A0\1F517' ;
@@ -58,7 +60,6 @@ header >h1{
     font-family: var(--fonteMarvel);
     padding: 10px;
     text-shadow: 2px 2px 0px black;
-
 }
 header>p{
     color: #FFF;
@@ -86,14 +87,15 @@ nav>a:hover{
     font-weight: bold;
     color: var(--cor6);
 }
- 
- main#News{
-     padding-top: 0px;
- }
+div.topo{
+    height: 97vh;
+    position: relative;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
  div.topo>p{
-     display: block; 
-     /*height: auto;
-     width: 97vh;*/
+     display: block;
      font-family: var(--fonteMarvel);
      font-size: 50px;
      color: aliceblue;
@@ -103,19 +105,20 @@ nav>a:hover{
      top: 50%;
      border-radius: 15px;
      transform: translate(-50%, -50%);
-
  }
+ div.Noticias{
+    width: 100%;
+}
  div#Movie{
     display: block; 
     height: auto;
     width: auto;
     background-size: contain;
-    position: auto auto;
-    padding: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto 0px ;
-}
+    position: left center;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 0px;
+    transform: translateZ(0);
+} 
 div#Movie>p{
     padding-left: 40%;
     color: var(--cor4);    
@@ -127,14 +130,13 @@ div#HQs{
     height: auto;
     width: auto;
     background-size: contain;
-    position: auto auto;
-    padding: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto 0px ;
+    position: left center;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 0px;
+    transform: translateZ(0);
 }
 div#HQs>p{
-    padding-left: 40%;
+    padding-left: 35%;
     color: var(--cor4);    
     font-family: var(--fonteRoboto);
     font-size: 20px;
@@ -144,14 +146,13 @@ div#Games{
     height: auto;
     width: auto;
     background-size: contain;
-    position: auto auto;
-    padding: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto 0px ;
+    position: left center;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 0px;
+    transform: translateZ(0);
 }
 div#Games>p{
-    padding-left: 40%;
+    padding-left: 37%;
     color: var(--cor4);    
     font-family: var(--fonteRoboto);
     font-size: 20px;
@@ -161,18 +162,18 @@ div#Series{
     height: auto;
     width: auto;
     background-size: contain;
-    position: auto auto;
-    padding: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: auto 0px ;
+    position: left center;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 0px;
+    transform: translateZ(0);
 }
 div#Series>p{
-    padding-left: 40%;
+    padding-left: 27%;
     color: var(--cor4);    
     font-family: var(--fonteRoboto);
     font-size: 20px;
 }
+
  footer{
     background-color: var(--cor1);
     color: #FFF;
@@ -215,6 +216,7 @@ div.Coluna_Card{
     padding-top: 20px;
     padding-bottom: 10px;
     height: 300px;
+
 }
 div p#titulo_do_Card{
     color: #202020; 
@@ -284,4 +286,7 @@ div.News{
     border-top: 2.5px solid rgba(25, 23, 23, 0.587); 
 }
 div.coluna{
-     border: 1px solid transparent;}
+     border: 1px solid transparent;
+    width: 97vh;
+    }
+    
