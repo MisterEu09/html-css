@@ -36,12 +36,12 @@
     margin:0px;
     padding:0px;
 }
-body{
+html, body{
+    height:99vh;
     background-color: #FFF;
-    font-family: "";
-    width: auto;
+    font-family: var(--fontePadrao);
+    width: auto;    
 }
-
 a.externo::after{
     content:'\00A0\1F517' ;
 }
