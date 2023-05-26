@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            width: auto;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td.img{
+            width: auto;
+            padding: auto;
+            text-align: left;
+        }
+        td.num{
+            text-align: right;
+            padding: 5px;
+        }
+        img{
+            max-width: 30px; 
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody> tr:nth-child(odd){/*odd = impar  *//*(2n-1)*/
+            background-color: lightblue;
+            font-weight: bold;
+        }
+        tbody> tr:nth-child(even){/*even = par (2n)*/
+            background-color: palevioletred;
+            text-decoration: double;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País comparável(habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="img" class="Estado"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/1170px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                <td class="num">46.649.123</td>
+                <td >21,35%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1125px-Flag_of_Spain.svg.png" alt=""> Espanha
+(47.416.000)</td>
+            </tr>
+            <tr>
+                <td class="img" class="Estado"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/210px-Bandeira_de_Minas_Gerais.svg.png" alt=""> Minas Gerais</td>
+                <td class="num">21.411.923</td>
+                <td >9,8%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Burkina_Faso.svg/188px-Flag_of_Burkina_Faso.svg.png" alt=""> Burquina Fasso
+
+                (20.903.273)
+            </td>
+            </tr>
+            <tr>
+                <td class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/210px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="">  Rio de Janeiro</td>
+                <td class="num">	
+                    17.463.349</td>
+                <td >7,99%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/188px-Flag_of_Cambodia.svg.png" alt="">Camboja
+
+                (16.718.965)
+            </td>
+            </tr>
+            <tr>
+                <td class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/210px-Bandeira_da_Bahia.svg.png" alt="">Bahia</td>
+                <td class="num">14.985.284</td>
+                <td >6,86%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/188px-Flag_of_Zimbabwe.svg.png" alt="">Zimbabwe
+
+                (14.862.924)
+            </td>
+            </tr>
+            <tr>
+                <td class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/210px-Bandeira_do_Paran%C3%A1.svg.png" alt="">Paraná</td>
+                <td class="num">	
+                    11.597.484</td>
+                <td >5,31%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/188px-Flag_of_Tunisia.svg.png" alt="">Tunísia
+                
+                (11.818.619)
+            </td>
+            </tr>
+            <tr>
+                <td class="img"><img src="https://cidades.ibge.gov.br/img/bandeiras/RS.gif" alt="">Rio Grande do Sul</td>
+                <td class="num">	
+                    11.466.630</td>
+                <td >5,24%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/1200px-Flag_of_Cuba.svg.png" alt="">Cuba
+                (11.326.616)
+            </td>
+            </tr>
+            <tr>
+                <td class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/210px-Bandeira_de_Pernambuco.svg.png" alt="">Pernambuco</td>
+                <td class="num">	
+                    9.674.793</td>
+                <td >4,42%%</td>
+                <td class="img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/188px-Flag_of_Austria.svg.png "alt="">Áustria 
+                    (9 006 398)
+            </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>133.248.586</strong></td>
+            <th scope="row">Total de % do Total</th>
+            <td><strong>61,00%</strong></td>
+
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto corrupti dolor culpa in expedita, maiores facilis. Nostrum, nesciunt rem nulla eligendi iste voluptatibus amet ea, laudantium praesentium quaerat dolorem perspiciatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus tenetur cupiditate animi, exercitationem fugiat nemo, officia debitis laborum culpa aliquam minus cumque totam soluta? Voluptatem impedit quasi repudiandae ipsum sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam optio doloremque ipsum commodi itaque vel, minima at quisquam, nam libero laborum ipsa? Nostrum expedita quos, nulla sed ea explicabo!
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto corrupti dolor culpa in expedita, maiores facilis. Nostrum, nesciunt rem nulla eligendi iste voluptatibus amet ea, laudantium praesentium quaerat dolorem perspiciatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus tenetur cupiditate animi, exercitationem fugiat nemo, officia debitis laborum culpa aliquam minus cumque totam soluta? Voluptatem impedit quasi repudiandae ipsum sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam optio doloremque ipsum commodi itaque vel, minima at quisquam, nam libero laborum ipsa? Nostrum expedita quos, nulla sed ea explicabo!
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto corrupti dolor culpa in expedita, maiores facilis. Nostrum, nesciunt rem nulla eligendi iste voluptatibus amet ea, laudantium praesentium quaerat dolorem perspiciatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus tenetur cupiditate animi, exercitationem fugiat nemo, officia debitis laborum culpa aliquam minus cumque totam soluta? Voluptatem impedit quasi repudiandae ipsum sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quibusdam optio doloremque ipsum commodi itaque vel, minima at quisquam, nam libero laborum ipsa? Nostrum expedita quos, nulla sed ea explicabo!
+    </p>
+</body>
+</html>
