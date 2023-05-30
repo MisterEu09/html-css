@@ -6,12 +6,21 @@
 /*
 Typical Device Breakpoints
 -----------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: 768px até 992px
-Desktop: 992px até 1200px
-Grandes telas: aciam de 1200px
-*/
+
+/* Dispositivos extra pequenos (telefones, 600px e abaixo)
+Tela somente @media e (largura máxima: 600px) {...} */
+
+/* Dispositivos pequenos (tablets retrato e telefones grandes, 600px e acima) 
+Tela somente @media e (largura mínima: 600px) {...}*/
+
+/* Dispositivos médios (tablets de paisagem, 768px e superior) 
+Tela somente @media e (largura mínima: 768px) {...}*/
+
+/* Dispositivos grandes (laptops/desktops, 992px e superior) 
+Tela somente @media e (largura mínima: 992px) {...}*/
+
+/* Dispositivos extra grandes (laptops e desktops grandes, 1200px e acima) 
+Tela somente @media e (largura mínima: 1200px) {...}*/
 
 /*
 Para midias pequenas
